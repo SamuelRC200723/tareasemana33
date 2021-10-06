@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ayyyy</title>
+	<style>
+
+		.boto{
+			position: absolute;
+top: 50px;
+left: 350px;
+height:50px;
+width:150px;
+background:red;
+color: black;
+align-content: center;
+		}
+		.boto1{
+			position: absolute;
+top: 250px;
+left: 350px;
+height:50px;
+width:150px;
+background:red;
+color: black;
+align-content: center;
+		}
+		.papitas{
+			position: absolute;
+top: 20px;
+left: 50px;
+height:50px;
+width:150px;
+background:red;
+color: black;
+align-content: center;
+
+		}
+		.chocolatina{
+			position: absolute;
+top: 50px;
+left: 50px;
+height:50px;
+width:150px;
+background:red;
+color: black;
+align-content: center;
+
+
+		}
+
+		.doritos{
+			position: absolute;
+top: 80px;
+left: 50px;
+height:50px;
+width:150px;
+background:red;
+color: black;
+align-content: center;
+
+
+		}
+		
+		.producto1{
+			position: absolute;
+top: 30px;
+left: 200px;
+height:10px;
+width:100px;
+background: orange;
+		}
+		.producto2{
+			position: absolute;
+top: 60px;
+left: 200px;
+height:10px;
+width:100px;
+background: blue;
+
+
+		}
+		.producto3{
+position: absolute;
+top: 90px;
+left: 200px;
+height:10px;
+width:100px;
+
+background: pink;
+
+
+		}
+
+				.producto4{
+position: absolute;
+top: 120px;
+left: 200px;
+height:10px;
+width:100px;
+background: yellow;
+
+
+
+		}
+		.papito{
+position: absolute;
+top: 200px;
+left: 50px;
+height:100px;
+width:150px;
+background:green;
+color: black;
+align-content: center;
+
+
+
+		}
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<form>
+		<center><label>tienda de juana</label></center>
+		<div><input type="text" class="producto1" id="producto"placeholder="producto"></input></div>
+		<div><input type="text" id="cantidad" class="producto2" placeholder="cantidad"></input></div>
+		<div><input type="text" id="precio" class="producto3" placeholder="precio"></input></div>
+		<div><input type="text" id="dinero" class="producto4" placeholder="dinero"></input></div>
+		<div class="abuela"></div>
+		<div class="papito">solo hay 10 productos disponibles de cada uno no se puede comprar mas de esta cantidad</div>
+	<div id="papita" class="papitas" id="papitas">papitas=3500</div>
+	<div id="chocolatin"  class="chocolatina " id="chocolatina">chocolatina=2500</div>
+	<div id="dorito"class="doritos" id="doritos">doritos=1500</div>
+	<div class="boto" onclick="calcu()">pulse aqui para ver su cuenta</div>
+	<div class="boto1" onclick="calcu()" id="sfsf"></div>
+	</form>
+	<script>
+
+		function calcu() {
+	x=(producto.value)
+	y=Number(cantidad.value)
+	z=Number(precio.value)
+	w=Number(dinero.value)
+
+
+
+	ct=10
+	cr=10
+	cc=10
+	if (x="producto") {
+		if (y<=ct) {
+			amino=y*z
+			resul=amino-w
+			sfsf.innerHTML="compraste:"+ y +" y tiens que pagar:"+amino
+}
+if (y<=cr) {
+			amino=y*z
+			resul=amino-w
+			sfsf.innerHTML="compraste:"+ y +" y tienes que pagar:"+amino
+}
+if (y<=cc) {
+			amino=y*z
+			resul=amino-w
+			sfsf.innerHTML="compraste:"+ y +" y tienes que pagar:"+amino+"y tu devuelta es"+resul
+}
+
+		}
+	}
+	</script>
+
+</body>
+</html>
